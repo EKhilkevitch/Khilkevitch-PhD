@@ -1,7 +1,16 @@
+
 %&preformat-disser
 \RequirePackage[l2tabu,orthodox]{nag} % Раскомментировав, можно в логе получать рекомендации относительно правильного использования пакетов и предупреждения об устаревших и нерекомендуемых пакетах
 % Формат А4, 14pt (ГОСТ Р 7.0.11-2011, 5.3.6)
 \documentclass[a4paper,14pt,oneside,openany]{memoir}
+
+% From https://github.com/reutenauer/polyglossia/issues/280
+\providecommand*{\chapterformat}{}
+\providecommand*{\sectionformat}{}%
+\providecommand*{\subsectionformat}{}%
+\providecommand*{\subsubsectionformat}{}%
+\providecommand*{\paragraphformat}{}%
+\providecommand*{\subparagraphformat}{}%
 
 \input{common/setup}            % общие настройки шаблона
 \input{common/packages}         % Пакеты общие для диссертации и автореферата
